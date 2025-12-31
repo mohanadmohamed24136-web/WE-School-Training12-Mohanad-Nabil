@@ -1,0 +1,229 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f8f9fa;
+  padding-top: 70px;
+}
+
+.main-nav {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 span {
+  color: #0d6efd;
+}
+
+.hero-img {
+  max-width: 260px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-card .card-body {
+  padding: 15px;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 13px;
+  display: none;
+}
+
+/* Scroll animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.7s;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Toast */
+.toast {
+  background: #fff;
+  border-left: 4px solid #198754;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark .main-nav,
+body.dark .project-card,
+body.dark .toast {
+  background: #020617;
+}
+
+body.dark .bg-light {
+  background: #020617 !important;
+}
+
+body.dark .form-control {
+  background: #020617;
+  color: #fff;
+  border-color: #334155;
+}
+
+body.dark .error-text {
+  color: #f87171;
+}
+/* ================= DARK MODE COLORS ================= */
+
+body.dark {
+  background-color: #020617;   /* very dark blue */
+  color: #e5e7eb;              /* light gray text */
+}
+
+/* Navbar */
+body.dark .main-nav {
+  background-color: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+body.dark .nav-link {
+  color: #cbd5f5;
+}
+
+body.dark .nav-link:hover {
+  color: #4f46e5;
+}
+
+/* Hero */
+body.dark .hero-section h1 span {
+  color: #6366f1; /* soft indigo */
+}
+
+body.dark .hero-text {
+  color: #cbd5e1;
+}
+
+/* Sections */
+body.dark .section {
+  background-color: #020617;
+}
+
+body.dark .bg-light {
+  background-color: #020617 !important;
+}
+
+/* Cards (Projects) */
+body.dark .project-card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+body.dark .project-card h5 {
+  color: #f8fafc;
+}
+
+body.dark .project-card p {
+  color: #cbd5e1;
+}
+
+/* Progress Bars */
+body.dark .progress {
+  background-color: #1e293b;
+}
+
+body.dark .progress-bar.bg-primary {
+  background-color: #6366f1 !important;
+}
+
+body.dark .progress-bar.bg-success {
+  background-color: #22c55e !important;
+}
+
+body.dark .progress-bar.bg-info {
+  background-color: #38bdf8 !important;
+}
+
+body.dark .progress-bar.bg-warning {
+  background-color: #facc15 !important;
+  color: #000;
+}
+
+/* Buttons */
+body.dark .btn-primary {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+body.dark .btn-primary:hover {
+  background-color: #6366f1;
+}
+
+/* Form */
+body.dark .form-control {
+  background-color: #020617;
+  color: #f8fafc;
+  border: 1px solid #334155;
+}
+
+body.dark .form-control::placeholder {
+  color: #94a3b8;
+}
+
+body.dark .form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,.25);
+}
+
+/* Errors */
+body.dark .error-text {
+  color: #f87171;
+}
+
+/* Toast */
+body.dark .toast {
+  background-color: #020617;
+  color: #e5e7eb;
+  border-left: 4px solid #22c55e;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+/* Footer */
+body.dark footer {
+  background-color: #020617;
+  color: #94a3b8;
+}
+body.dark .navbar-brand {
+  color: #f8fafc !important;
+}
+
+body.dark .navbar-brand:hover {
+  color: #6366f1 !important;
+}
